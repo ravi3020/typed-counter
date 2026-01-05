@@ -1,73 +1,99 @@
-# React + TypeScript + Vite
+# Typed Counter App 🧮⚛️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet meaningful **React + TypeScript + Tailwind CSS** project built as part of my learning journey.  
+This app helped me understand **typed state, event handling, UI styling, and deployment** from scratch.
 
-Currently, two official plugins are available:
+👉 **Live Demo:** https://ravi3020.github.io/typed-counter/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The **Typed Counter App** is a small counter application that allows users to:
+- Increment the count
+- Decrement the count
+- Reset the count to zero
 
-## Expanding the ESLint configuration
+While the functionality is simple, the focus of this project is on:
+- Writing **type-safe React code**
+- Using **modern tooling**
+- Understanding **real-world deployment**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧠 What I Learned from This Project
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🔹 React + TypeScript
+- Using `useState<number>` for strictly typed state
+- Writing **typed event handler functions**
+- Understanding why and when to use `void` return types
+- Safe state updates using the functional updater pattern
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔹 Tailwind CSS
+- Utility-first styling approach
+- Building responsive layouts without custom CSS
+- Creating hover and active states for better UX
+- Making the UI mobile-friendly
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔹 Project Setup & Tooling
+- Creating a project using **Vite + React + TypeScript**
+- Configuring Tailwind correctly with content paths
+- Understanding build vs dev environments
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🔹 Git & GitHub
+- Initializing a Git repository
+- Using SSH authentication with GitHub
+- Handling common Git errors and fixing them
+- Maintaining a clean commit history
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔹 Deployment
+- Building the app for production using Vite
+- Deploying a React app to **GitHub Pages**
+- Understanding `base` paths in Vite
+- Publishing via the `gh-pages` branch
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **Git & GitHub**
+- **GitHub Pages**
+
+---
+
+## 📱 Features
+
+- Fully typed counter logic
+- Clean and minimal UI
+- Responsive (mobile-friendly)
+- Deployed and publicly accessible
+
+---
+
+## 📸 Screenshot
+
+<img width="1908" height="1008" alt="image" src="https://github.com/user-attachments/assets/efb576df-c4f2-4e94-9a0c-7ae553cfba82" />
+
+
+---
+
+## 📦 Installation & Setup
+
+If you want to run this project locally:
+
+```bash
+# Clone the repository
+git clone git@github.com:ravi3020/typed-counter.git
+
+# Navigate into the project
+cd typed-counter
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
